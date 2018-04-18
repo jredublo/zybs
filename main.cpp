@@ -63,9 +63,9 @@ int main() {
     // PRINT OUT THE CONTACTS
     cout << "CONTACT LIST" << endl;
     node1->PrintContactNode();
-    cout << endl;
+    cout << endl << endl;
     node2->PrintContactNode();
-    cout << endl;
+    cout << endl << endl;
     node3->PrintContactNode();
 
 } // END

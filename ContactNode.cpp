@@ -56,7 +56,7 @@ ContactNode* ContactNode::GetNext() {
 /** Print function */
 void ContactNode::PrintContactNode() {
     cout << "Name: " << GetName() << endl;
-    cout << "Phone number: " << GetPhoneNumber() << endl;
+    cout << "Phone number: " << GetPhoneNumber();
 }
 
 #endif
