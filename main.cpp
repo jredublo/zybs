@@ -24,9 +24,9 @@ int main() {
     string givenName1;
     string givenPhone1;
     cout << "Enter name:" << endl;
-    cin >> givenName1;
+    getline(cin,givenName1); //cin >> givenName1;
     cout << "Enter phone number:" << endl;
-    cin >> givenPhone1;
+    getline(cin,givenPhone1); // cin >> givenPhone1;
     cout << "You entered: " << givenName1 << ", " << givenPhone1 << endl;
     ContactNode* node1 = new ContactNode(givenName1, givenPhone1);
 
@@ -37,9 +37,9 @@ int main() {
     string givenName2;
     string givenPhone2;
     cout << "Enter name:" << endl;
-    cin >> givenName2;
+    getline(cin,givenName2);// cin >> givenName2;
     cout << "Enter phone number:" << endl;
-    cin >> givenPhone2;
+    getline(cin,givenPhone2);// cin >> givenPhone2;
     cout << "You entered: " << givenName2 << ", " << givenPhone2 << endl;
     ContactNode* node2 = new ContactNode(givenName2, givenPhone2);    
     node2->InsertAfter(node1);
@@ -51,9 +51,9 @@ int main() {
     string givenName3;
     string givenPhone3;
     cout << "Enter name:" << endl;
-    cin >> givenName3;
+    getline(cin,givenName3); // cin >> givenName3;
     cout << "Enter phone number:" << endl;
-    cin >> givenPhone3;
+    getline(cin,givenPhone3); // cin >> givenPhone3;
     cout << "You entered: " << givenName3 << ", " << givenPhone3 << endl;
     ContactNode* node3 = new ContactNode(givenName3, givenPhone3);
     node3->InsertAfter(node2);
