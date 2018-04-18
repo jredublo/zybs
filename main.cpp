@@ -67,5 +67,6 @@ int main() {
     node2->PrintContactNode();
     cout << endl << endl;
     node3->PrintContactNode();
+    cout << endl << endl;
 
 } // END
