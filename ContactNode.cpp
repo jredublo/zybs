@@ -28,10 +28,20 @@ ContactNode::ContactNode(string contactName, string phoneNumber) {
 
 /** Insert method to insert this node after given node TODO */
 void ContactNode::InsertAfter(ContactNode* nodePTR) {
-    ContactNode* nodeLoc = nodePTR;
-    ContactNode* nodeLocNex = nodePTR->GetNext();
-    this->nextNodePtr = nodeLocNex;
-    nodeLoc->nextNodePtr = this;
+    
+    // make the next node of this be the node PTR
+    // make this node's nextNode = node PTR
+    // add NodePTR to after this node
+
+
+    ContactNode* oldNext = this->nextNodePtr;
+    nodePTR->nextNodePtr = oldNext;
+    this->nextNodePtr = nodePTR;
+    
+    /*ContactNode* node = nodePTR;
+    ContactNode* nodeNex = nodePTR->GetNext();
+    this->nextNodePtr = nodeNex;
+    node->nextNodePtr*/
 }
 
 
